@@ -22,12 +22,7 @@ createAnalysisProject <- function(name, title = NULL,
                                   packagedeps = "packrat",
                                   git = TRUE,
                                   reset = TRUE,
-                                  external_setup = list(
-                                    git_service = "GitHub",
-                                    login = gh::gh_whoami()$login,
-                                    private = FALSE,
-                                    protocol = "ssh",
-                                    ci_activation = "tic"),
+                                  external_setup = NULL,
                                   dirs = c("data", "analysis", "outputs")) {
   packagedeps <- match.arg(packagedeps, okpackagedeps())
 

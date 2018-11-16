@@ -7,9 +7,7 @@ commands executed to save you hassle}
 \usage{
 createPackageProject(name, title = NULL, folder = getwd(),
   bestPractices = TRUE, coverage = "codecov", git = TRUE,
-  pkgdown = TRUE, external_setup = list(git_service = "GitHub", login =
-  gh::gh_whoami()$login, private = FALSE, protocol = "ssh", ci_activation =
-  "tic"))
+  pkgdown = TRUE, external_setup = NULL)
 }
 \arguments{
 \item{name}{Project / package name}

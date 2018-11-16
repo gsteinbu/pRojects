@@ -6,9 +6,7 @@
 \usage{
 createAnalysisProject(name, title = NULL, folder = getwd(),
   packagedeps = "packrat", git = TRUE, reset = TRUE,
-  external_setup = list(git_service = "GitHub", login =
-  gh::gh_whoami()$login, private = FALSE, protocol = "ssh", ci_activation =
-  "tic"), dirs = c("data", "analysis", "outputs"))
+  external_setup = NULL, dirs = c("data", "analysis", "outputs"))
 }
 \arguments{
 \item{name}{Project}

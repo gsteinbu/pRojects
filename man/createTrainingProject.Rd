@@ -7,9 +7,7 @@
 createTrainingProject(name, folder = getwd(), dirs = c("data",
   "handouts", "slides"), handoutEngine = "rmarkdown",
   slideEngine = "rmarkdown", packagedeps = "packrat", git = TRUE,
-  external_setup = list(git_service = "GitHub", login =
-  gh::gh_whoami()$login, private = FALSE, protocol = "ssh", ci_activation =
-  "tic"), title = NULL, reset = TRUE)
+  external_setup = NULL, title = NULL, reset = TRUE)
 }
 \arguments{
 \item{name}{Project}

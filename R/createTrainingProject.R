@@ -27,12 +27,7 @@ createTrainingProject <- function(name, folder = getwd(),
                                   slideEngine = "rmarkdown",
                                   packagedeps = "packrat",
                                   git = TRUE,
-                                  external_setup = list(
-                                    git_service = "GitHub",
-                                    login = gh::gh_whoami()$login,
-                                    private = FALSE,
-                                    protocol = "ssh",
-                                    ci_activation = "tic"),
+                                  external_setup = NULL,
                                   title = NULL,
                                   reset = TRUE) {
   packagedeps <- match.arg(packagedeps, okpackagedeps())
