@@ -5,10 +5,8 @@
 \title{Create a very basic project directory}
 \usage{
 createBasicProject(name, title = NULL, folder = getwd(),
-  packagedeps = "checkpoint", git = TRUE,
-  external_setup = list(git_service = "GitHub", login =
-  gh::gh_whoami()$login, private = FALSE, protocol = "ssh", ci_activation =
-  "tic"), reset = TRUE)
+  packagedeps = "packrat", git = TRUE, external_setup = NULL,
+  reset = TRUE)
 }
 \arguments{
 \item{name}{Project}

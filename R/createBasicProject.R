@@ -36,14 +36,9 @@
 createBasicProject <- function(name,
                                title = NULL,
                                folder = getwd(),
-                               packagedeps = "checkpoint",
+                               packagedeps = "packrat",
                                git = TRUE,
-                               external_setup = list(
-                                 git_service = "GitHub",
-                                 login = gh::gh_whoami()$login,
-                                 private = FALSE,
-                                 protocol = "ssh",
-                                 ci_activation = "tic"),
+                               external_setup = NULL,
                                reset = TRUE) {
 
   packagedeps <- match.arg(packagedeps, okpackagedeps())
