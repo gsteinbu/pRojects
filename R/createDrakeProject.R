@@ -17,12 +17,12 @@
 #' ├─ \strong{reports}          \emph{Reports for project. E.g., R markdown notebooks.}\cr
 #' │  ├─ \strong{knitr}         \emph{Generated reports as HTML, PDF, LaTeX, etc..}\cr
 #' │  │  └─ \strong{figures}    \emph{Graphics and figures to be used in reporting.}\cr
-#' │  └─ \strong{markdown}      \emph{R notebooks. Naming convention is a number (for ordering), the creator's initials, and a short '-' delimited description, e.g. '1.0-jqp-initial-data-exploration'.}\cr
+#' │  └─ \strong{markdown}      \emph{R notebooks. Naming convention is a number (for ordering), the creator's initials, and a short '-' delimited description, e.g. '001_jp_initial-data-exploration'.}\cr
 #' │\cr
-#' ├─ \strong{R}                \emph{Source code for use in this project}\cr
-#' │  ├─ \strong{packages.R}    \emph{File with packages needed in this project}\cr
-#' │  ├─ \strong{functions.R}   \emph{File with functions for analysis}\cr
-#' │  └─ \strong{plan.R}        \emph{File with drake plans}\cr
+#' ├─ \strong{R}                \emph{Source code for use in this project.}\cr
+#' │  ├─ \strong{packages.R}    \emph{File with packages needed in this project.}\cr
+#' │  ├─ \strong{functions.R}   \emph{File with functions for analysis.}\cr
+#' │  └─ \strong{plan.R}        \emph{File with drake plans.}\cr
 #' │\cr
 #' └─ \strong{<NAME>.Rproj}     \emph{Rstudio project file.}\cr
 #'
