@@ -2,7 +2,6 @@
 
 export(createAnalysisProject)
 export(createBasicProject)
-export(createCookieProject)
 export(createDrakeProject)
 export(createPackageProject)
 export(createTrainingProject)
