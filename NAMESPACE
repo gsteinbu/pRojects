@@ -2,6 +2,7 @@
 
 export(createAnalysisProject)
 export(createBasicProject)
+export(createBatchtoolsProject)
 export(createDrakeProject)
 export(createPackageProject)
 export(createTrainingProject)
