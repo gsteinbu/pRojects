@@ -74,17 +74,16 @@ createDrakeProject <- function(name, title = NULL,
     createdirs(dirs)
 
     # Content of files inspired by mtcars drake example
-    fileNames <- c("make", "plan", "functions", "packages")
+    fileNames <- c("make", "plan", "functions")
     for(fileName in fileNames) {
       fileName <- usethis:::slug(fileName, "R")
       usethis::use_template(paste0("drake/", fileName),
-                            save_as = ifelse(fileName=="make",
+                            save_as = ifelse(fileName=="make.R",
                                              fileName,
                                              paste0("R/", fileName)),
                             data = list(), ignore = FALSE,
                             open = FALSE, package = "pRojects")
     }
-    usethis:::done("Writing initial R files")
 
     usethis:::todo("Remember to choose a license. See https://choosealicense.com for details.")
 

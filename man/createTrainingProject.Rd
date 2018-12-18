@@ -20,7 +20,7 @@ createTrainingProject(name, folder = getwd(), dirs = c("data",
 
 \item{slideEngine}{Package for building slides}
 
-\item{packagedeps}{Set a tool for package reproducibility}
+\item{packagedeps}{Set a tool for package reproducibility. Check valid options with \link{okpackagedeps}.}
 
 \item{git}{Configure Git}
 

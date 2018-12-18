@@ -27,7 +27,7 @@ If NULL, a random one will be generated.}
 
 \item{folder}{Folder under which to create the project}
 
-\item{packagedeps}{Set a tool for package reproducibility}
+\item{packagedeps}{Set a tool for package reproducibility. Check valid options with \link{okpackagedeps}.}
 
 \item{git}{Configure Git}
 

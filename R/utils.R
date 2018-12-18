@@ -2,11 +2,33 @@
 # Dependencies management
 #####################################
 
+#' Valid package dependency managment
+#'
+#' Returns the names of options for package dependency managment in projects.
+#'
+#' The options mean in detail
+#' \itemize{
+#'  \item{none}{: No package dependency managment.}
+#'  \item{simple}{: A manual maintained file (\code{R/packages.R}) records packages needed in the project.}
+#'  \item{packrat}{: Use \link[packrat]{packrat} for package dependency managment.}
+#'  \item{checkpoint}{: Use \link[checkpoint]{checkpoint} for package dependency managment.}
+#' }
+#'
+#' @export
+#' @examples
+#' okpackagedeps()
 okpackagedeps <- function(){
-  c("none", "packrat", "checkpoint")
+  c("none", "simple", "packrat", "checkpoint")
 }
 
 setup_dep_system <- function(packagedeps){
+  if (packagedeps == "simple") {
+    usethis::use_template("packages.R",
+                          save_as = "R/packages.R",
+                          data = list(), ignore = FALSE,
+                          open = FALSE, package = "pRojects")
+  }
+
   if (packagedeps == "packrat") {
     desc::desc_set_dep(package = "packrat",
                        type = "Imports",

@@ -4,7 +4,7 @@
 #' @param title "What the Project Does (One Line, Title Case)"
 #'              If NULL, a random one will be generated.
 #' @param folder Folder under which to create the project
-#' @param packagedeps Set a tool for package reproducibility
+#' @param packagedeps Set a tool for package reproducibility. Check valid options with \link{okpackagedeps}.
 #' @param git Configure Git
 #' @param external_setup How to do the partly interactive setup
 #'  of online git, CI and coverage platforms. If NULL, no setup.
