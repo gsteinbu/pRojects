@@ -52,29 +52,28 @@ badge to the README.
 A structure template for a project using the package \link\link{drake}. Inspired by Cookiecutter and \code{\link[drake]{drake_example}} mtcars.
 }
 \details{
-├─ \strong{make.R}           \emph{File with commands to make plans like (e.g. 'make(data)').}\cr
-├─ \strong{DESCRIPTION}      \emph{Description file with info about authors or version.}\cr
-├─ \strong{README.md}        \emph{README for developers of this project.}\cr
+├─ \strong{make.R}               \emph{Commands to make plans like (e.g. 'make(data)').}\cr
+├─ \strong{DESCRIPTION}          \emph{Info about authors, version and packages used (to attach them).}\cr
+├─ \strong{README.md}            \emph{README for developers of this project.}\cr
 │\cr
 ├─ \strong{data}\cr
-│  ├─ \strong{external}      \emph{Data from third party sources.}\cr
-│  ├─ \strong{processed}     \emph{The processed, canonical data sets for modeling.}\cr
-│  └─ \strong{raw}           \emph{The original, immutable data dump.}\cr
+│  ├─ \strong{external}          \emph{Data from third party sources.}\cr
+│  ├─ \strong{processed}         \emph{The processed, canonical data sets for modeling.}\cr
+│  └─ \strong{raw}               \emph{The original, immutable data dump.}\cr
 │\cr
-├─ \strong{packrat}          \emph{Default location for \link{packrat}.}\cr
-├─ \strong{references}       \emph{Data dictionaries, manuals, and all other explanatory materials.}\cr
+├─ \strong{references}           \emph{Data dictionaries, manuals, and all other explanatory materials.}\cr
 │\cr
-├─ \strong{reports}          \emph{Reports for project. E.g., R markdown notebooks.}\cr
-│  ├─ \strong{knitr}         \emph{Generated reports as HTML, PDF, LaTeX, etc..}\cr
-│  │  └─ \strong{figures}    \emph{Graphics and figures to be used in reporting.}\cr
-│  └─ \strong{markdown}      \emph{R notebooks. Naming convention is a number (for ordering), the creator's initials, and a short '-' delimited description, e.g. '001_jp_initial-data-exploration'.}\cr
+├─ \strong{reports}              \emph{Reports for project. E.g., R markdown notebooks.}\cr
+│  ├─ \strong{knitr}             \emph{Generated reports as HTML, PDF, LaTeX, etc..}\cr
+│  │  └─ \strong{figures}        \emph{Graphics and figures to be used in reporting.}\cr
+│  └─ \strong{markdown}          \emph{R notebooks. Naming convention is a number (for ordering), the creator's initials, and a short '-' delimited description, e.g. '001_jp_initial-data-exploration'.}\cr
 │\cr
-├─ \strong{R}                \emph{Source code for use in this project.}\cr
-│  ├─ \strong{packages.R}    \emph{File with packages needed in this project.}\cr
-│  ├─ \strong{functions.R}   \emph{File with functions for analysis.}\cr
-│  └─ \strong{plan.R}        \emph{File with drake plans.}\cr
+├─ \strong{R}                    \emph{Source code for use in this project.}\cr
+│  ├─ \strong{attach-packages.R} \emph{Attach packages needed (given in description file).}\cr
+│  ├─ \strong{functions.R}       \emph{Functions for analysis.}\cr
+│  └─ \strong{plan.R}            \emph{Drake plans.}\cr
 │\cr
-└─ \strong{<NAME>.Rproj}     \emph{Rstudio project file.}\cr
+└─ \strong{<NAME>.Rproj}         \emph{Rstudio project file.}\cr
 }
 \examples{
 \dontrun{

@@ -2,30 +2,29 @@
 #'
 #' A structure template for a project using the package \link[batchtools]. Inspired by Cookiecutter.
 #'
-#' ├─ \strong{make.R}           \emph{File with commands to perform experiments (e.g. \code{\link[batchtools]{submitJobs}}).}\cr
-#' ├─ \strong{DESCRIPTION}      \emph{Description file with info about authors or version.}\cr
-#' ├─ \strong{README.md}        \emph{README for developers of this project.}\cr
+#' ├─ \strong{make.R}               \emph{Commands to perform experiments (e.g. \code{\link[batchtools]{submitJobs}}).}\cr
+#' ├─ \strong{DESCRIPTION}          \emph{Info about authors, version and packages used (to attach them).}\cr
+#' ├─ \strong{README.md}            \emph{README for developers of this project.}\cr
 #' │\cr
 #' ├─ \strong{data}\cr
-#' │  ├─ \strong{processed}     \emph{The processed, canonical data sets for the experiments.}\cr
-#' │  └─ \strong{raw}           \emph{The original, immutable data dump.}\cr
+#' │  ├─ \strong{processed}         \emph{The processed, canonical data sets for the experiments.}\cr
+#' │  └─ \strong{raw}               \emph{The original, immutable data dump.}\cr
 #' │\cr
-#' ├─ \strong{packrat}          \emph{Default location for \link{packrat}.}\cr
-#' ├─ \strong{references}       \emph{Data dictionaries, articles, and all other explanatory materials.}\cr
+#' ├─ \strong{references}           \emph{Data dictionaries, articles, and all other explanatory materials.}\cr
 #' │\cr
-#' ├─ \strong{reports}          \emph{Reports for project. E.g., R markdown notebooks.}\cr
-#' │  ├─ \strong{knitr}         \emph{Generated reports as HTML, PDF, LaTeX, etc..}\cr
-#' │  │  └─ \strong{figures}    \emph{Graphics and figures to be used in reporting.}\cr
-#' │  └─ \strong{markdown}      \emph{R notebooks. Naming convention is a number (for ordering), the creator's initials, and a short '-' delimited description, e.g. '1.0-jqp-initial-data-exploration'.}\cr
+#' ├─ \strong{reports}              \emph{Reports for project. E.g., R markdown notebooks.}\cr
+#' │  ├─ \strong{knitr}             \emph{Generated reports as HTML, PDF, LaTeX, etc..}\cr
+#' │  │  └─ \strong{figures}        \emph{Graphics and figures to be used in reporting.}\cr
+#' │  └─ \strong{markdown}          \emph{R notebooks. Naming convention is a number (for ordering), the creator's initials, and a short '-' delimited description, e.g. '1.0-jqp-initial-data-exploration'.}\cr
 #' │\cr
-#' ├─ \strong{R}                \emph{Source code for use in this project.}\cr
-#' │  ├─ \strong{packages.R}    \emph{File with packages needed in experiments.}\cr
-#' │  ├─ \strong{functions.R}   \emph{File with functions for experiments.}\cr
-#' │  ├─ \strong{problems.R}    \emph{File with problems for experiments.}\cr
-#' │  ├─ \strong{algorithms.R}  \emph{File with algorithms for experiments.}\cr
-#' │  └─ \strong{design.R}      \emph{File with design of experiments.}\cr
+#' ├─ \strong{R}                    \emph{Source code for use in this project.}\cr
+#' │  ├─ \strong{attach-packages.R} \emph{Attach packages needed (given in description file).}\cr
+#' │  ├─ \strong{functions.R}       \emph{Functions for experiments.}\cr
+#' │  ├─ \strong{problems.R}        \emph{Problems for experiments.}\cr
+#' │  ├─ \strong{algorithms.R}      \emph{Algorithms for experiments.}\cr
+#' │  └─ \strong{design.R}          \emph{Design of experiments.}\cr
 #' │\cr
-#' └─ \strong{<NAME>.Rproj}     \emph{Rstudio project file.}\cr
+#' └─ \strong{<NAME>.Rproj}         \emph{Rstudio project file.}\cr
 #'
 #' @inheritParams createBasicProject
 #' @param dirs Directories to create

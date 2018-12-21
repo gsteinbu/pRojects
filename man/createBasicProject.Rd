@@ -36,7 +36,13 @@ badge to the README.
 \item{reset}{whether to reset the project to current project}
 }
 \description{
-Create a very basic project directory
+Is the basis for all other projects.
+}
+\details{
+├─ \strong{DESCRIPTION}          \emph{Info about authors, version and packages used (to attach them).}\cr
+├─ \strong{README.md}            \emph{README for developers of this project.}\cr
+├─ \strong{R}                    \emph{Source code for use in this project.}\cr
+└─ \strong{<NAME>.Rproj}         \emph{Rstudio project file.}\cr
 }
 \examples{
 \dontrun{

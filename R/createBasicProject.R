@@ -1,5 +1,12 @@
 #' Create a very basic project directory
 #'
+#' Is the basis for all other projects.
+#'
+#' ├─ \strong{DESCRIPTION}          \emph{Info about authors, version and packages used (to attach them).}\cr
+#' ├─ \strong{README.md}            \emph{README for developers of this project.}\cr
+#' ├─ \strong{R}                    \emph{Source code for use in this project.}\cr
+#' └─ \strong{<NAME>.Rproj}         \emph{Rstudio project file.}\cr
+#'
 #' @param name Project
 #' @param title "What the Project Does (One Line, Title Case)"
 #'              If NULL, a random one will be generated.

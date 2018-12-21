@@ -13,10 +13,12 @@ Returns the names of options for package dependency managment in projects.
 The options mean in detail
 \itemize{
 \item{none}{: No package dependency managment.}
-\item{simple}{: A manual maintained file (\code{R/packages.R}) records packages needed in the project.}
 \item{packrat}{: Use \link[packrat]{packrat} for package dependency managment.}
 \item{checkpoint}{: Use \link[checkpoint]{checkpoint} for package dependency managment.}
 }
+With any option needed packages should be written to the description
+file like in usual packages (Suggests, Imports, ...). Packages only
+suggested must not be attached. See the file \code{R/attach-packages.R}.
 }
 \examples{
 okpackagedeps()
